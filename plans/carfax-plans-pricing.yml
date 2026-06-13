@@ -1,0 +1,73 @@
+name: CARFAX Plans and Pricing
+description: CARFAX offers tiered consumer report bundles and enterprise B2B partnership agreements. Consumer plans are priced per VIN report with multi-report bundles available at reduced per-report rates. Business and dealer access is negotiated through enterprise contracts with custom volume-based pricing.
+url: https://www.carfax.com/vehicle-history-reports/
+plans:
+  - name: Single Report
+    description: One CARFAX Vehicle History Report for a single VIN.
+    type: consumer
+    price: 44.99
+    currency: USD
+    unit: per report
+    features:
+      - Accident and damage history
+      - Service and maintenance records
+      - Ownership history
+      - Title problems and lemon history
+      - Recall information
+  - name: 3-Report Bundle
+    description: Three CARFAX Vehicle History Reports for use on any VIN.
+    type: consumer
+    price: 64.99
+    currency: USD
+    unit: per bundle
+    features:
+      - Same features as single report
+      - Reduced per-report cost
+  - name: 5-Report Bundle
+    description: Five CARFAX Vehicle History Reports for use on any VIN.
+    type: consumer
+    price: 99.99
+    currency: USD
+    unit: per bundle
+    features:
+      - Same features as single report
+      - Lowest per-report cost in consumer tier
+  - name: CARFAX for Dealers
+    description: Subscription-based plan for automotive dealerships. Volume pricing negotiated through CARFAX Business Development. Includes bulk VHR access, inventory management tools, and CARFAX branding for listings.
+    type: enterprise
+    price: custom
+    currency: USD
+    unit: subscription
+    url: https://www.carfaxfordealers.com/
+    features:
+      - Unlimited or high-volume VHR access
+      - Used car listings integration
+      - Service history reporting
+      - CARFAX dealer branding
+  - name: CARFAX for Lenders and Insurance
+    description: Enterprise API access for financial institutions and insurance companies. Includes QuickVIN license plate to VIN decoding and vehicle history data for underwriting and lending decisions.
+    type: enterprise
+    price: custom
+    currency: USD
+    unit: contract
+    url: https://www.carfaxforlenders.com/
+    features:
+      - QuickVIN license plate lookup
+      - VHR for underwriting
+      - Bulk data via sFTP or API
+      - Vehicle valuation data
+  - name: CARFAX for Service Shops
+    description: Integration plan for automotive repair shops and service centers to report service history to CARFAX and look up vehicle history by VIN.
+    type: enterprise
+    price: custom
+    currency: USD
+    unit: contract
+    url: https://www.carfaxserviceshops.com/
+    features:
+      - Service history reporting (FTP-based)
+      - Vehicle history lookup by VIN
+      - QuickVIN decoding
+notes:
+  - Business API access requires a CARFAX Service Data Transfer Facilitation Agreement
+  - API keys are not publicly subscribable; contact Business Development to initiate
+  - Pricing for enterprise tiers is negotiated based on volume and use case

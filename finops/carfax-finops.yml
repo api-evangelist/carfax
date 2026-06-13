@@ -1,0 +1,40 @@
+name: CARFAX FinOps
+description: Financial operations considerations for integrating CARFAX APIs. Costs are primarily per-report or per-lookup for consumers, and volume-contract-based for business partners. There is no free tier for the official API; all enterprise access requires a formal agreement.
+url: https://www.carfax.com/vehicle-history-reports/
+model: per-report and enterprise contract
+free_tier: false
+trial: false
+cost_drivers:
+  - name: Vehicle History Report (VHR)
+    description: Primary cost unit for consumers and some business plans. Each VHR is tied to a unique VIN. Consumer bundles offer modest savings over single-report pricing.
+    unit: per VIN lookup
+    consumer_price_usd:
+      single: 44.99
+      bundle_3: 64.99
+      bundle_5: 99.99
+    enterprise_price: negotiated
+  - name: QuickVIN License Plate Lookup
+    description: License plate plus state converted to a VIN with full vehicle decode. Enterprise pricing only; each lookup may be billed individually within contracted volume.
+    unit: per lookup
+    price: negotiated with CARFAX for Lenders / CARFAX for Dealers
+  - name: Service History Reporting
+    description: Repair shops submit service history records to CARFAX via FTP batch. Pricing is part of the CARFAX for Service Shops agreement.
+    unit: per record batch
+    price: contract-based
+  - name: Vehicle Valuation API (Canada)
+    description: CARFAX Canada offers Market-Based and History-Based valuations via API. Priced under enterprise contracts for lenders, insurers, and government entities.
+    unit: per call
+    price: negotiated
+  - name: VIN Scan Detail (Canada)
+    description: Bulk VIN data delivery including description, demographics, activity logs, damage assessment, ownership history, and fraud detection. Available via API or sFTP.
+    unit: per VIN or bulk batch
+    price: negotiated
+cost_management:
+  - tip: Use bundle pricing for consumer use cases to reduce per-report cost from $44.99 to ~$13–20 per report.
+  - tip: Enterprise partners should negotiate volume tiers to minimize cost per lookup at scale.
+  - tip: Service shop integrations using FTP batching can reduce transaction overhead compared to per-call API billing.
+  - tip: CARFAX Canada's sFTP bulk delivery may be more cost-effective than per-call API for large batch processing.
+notes:
+  - No sandbox or free trial environment is available for the CARFAX API
+  - All enterprise API access requires a CARFAX Service Data Transfer Facilitation Agreement before cost negotiation begins
+  - CARFAX does not publish public rate cards for B2B API usage

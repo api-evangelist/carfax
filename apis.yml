@@ -1,0 +1,117 @@
+aid: carfax
+name: CARFAX
+description: CARFAX is a vehicle history reporting company that provides VIN-based history reports, dealer inventory solutions, QuickVIN license plate decoding, and used car valuations based on service records, accident history, ownership history, and title data. APIs are available to dealers, lenders, insurers, and service shops through enterprise partnership agreements.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/carfax/refs/heads/main/apis.yml
+created: 2026-06-13
+modified: 2026-06-13
+specificationVersion: "0.19"
+tags:
+  - Vehicle History
+  - VIN Lookup
+  - Automotive
+  - Used Cars
+  - Dealer Tools
+  - Insurance
+  - Lending
+  - QuickVIN
+  - Service History
+apis:
+  - aid: carfax:vehicle-history-report-api
+    name: CARFAX Vehicle History Report API
+    description: Enterprise API for retrieving CARFAX Vehicle History Reports (VHR) by VIN. Provides accident and damage history, service records, ownership history, title problems, lemon history, and recall information. Requires a CARFAX Service Data Transfer Facilitation Agreement; not publicly subscribable.
+    humanURL: https://www.carfax.com/vehicle-history-reports/
+    baseURL: https://www.carfax.com
+    tags:
+      - Vehicle History
+      - VIN
+      - Accident History
+      - Service Records
+    properties:
+      - type: Documentation
+        url: https://www.carfax.com/company/partners
+      - type: Partners
+        url: https://www.carfax.com/company/partners
+  - aid: carfax:quickvin-api
+    name: CARFAX QuickVIN API
+    description: Converts a license plate number and state into a VIN with full vehicle decode (year, make, model, trim). Each QuickVIN lookup includes access to a CARFAX Vehicle History Report. Available to lenders, dealers, and insurance companies through enterprise agreements.
+    humanURL: https://www.carfaxforlenders.com/products/quickvin/
+    baseURL: https://www.carfaxforlenders.com
+    tags:
+      - License Plate Lookup
+      - VIN Decode
+      - QuickVIN
+      - Lenders
+    properties:
+      - type: Documentation
+        url: https://www.carfaxforlenders.com/products/quickvin/
+  - aid: carfax:service-history-reporting-api
+    name: CARFAX Service History Reporting API
+    description: Enables automotive repair shops and DMS/SMS providers to submit vehicle service and repair records to CARFAX. Data is transmitted via FTP batch upload. Integration requires a CARFAX Service Data Transfer Facilitation Agreement.
+    humanURL: https://www.carfaxserviceshops.com/
+    baseURL: https://www.carfaxserviceshops.com
+    tags:
+      - Service History
+      - Repair Shops
+      - DMS Integration
+      - FTP
+    properties:
+      - type: Documentation
+        url: https://www.carfaxserviceshops.com/
+  - aid: carfax:vehicle-valuation-api
+    name: CARFAX Vehicle Valuation API
+    description: Provides Market-Based and History-Based vehicle valuations for lenders, insurers, and government entities. Market-Based values use machine learning on year, make, model, trim, odometer, location, and daily market data. History-Based values adjust for accident and damage history, service records, and ownership history. Available via CARFAX Canada for enterprise customers.
+    humanURL: https://go.carfax.ca/en-ca/big/solutions
+    baseURL: https://apireference.carfax.ca
+    tags:
+      - Vehicle Valuation
+      - Pricing
+      - Lenders
+      - Insurance
+      - Canada
+    properties:
+      - type: Documentation
+        url: https://apireference.carfax.ca/
+      - type: OpenAPI
+        url: https://apireference.carfax.ca/
+  - aid: carfax:vin-scan-detail-api
+    name: CARFAX VIN Scan Detail API
+    description: Delivers comprehensive VIN-level data in ten groupings including vehicle description, demographic information, activity logs, problem indicators, damage assessment, ownership history, and fraud detection. Available via API or bulk sFTP upload for Canadian enterprise customers.
+    humanURL: https://go.carfax.ca/en-ca/big/solutions
+    baseURL: https://apireference.carfax.ca
+    tags:
+      - VIN Data
+      - Fraud Detection
+      - Damage Assessment
+      - Bulk Data
+      - Canada
+    properties:
+      - type: Documentation
+        url: https://apireference.carfax.ca/
+common:
+  - type: Website
+    url: https://www.carfax.com
+  - type: Documentation
+    url: https://www.carfax.com/company/partners
+  - type: GitHubOrg
+    url: https://github.com/CARFAX
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/carfax
+  - type: Blog
+    url: https://www.carfax.com/press
+  - type: Pricing
+    url: https://www.carfax.com/vehicle-history-reports/
+  - type: StatusPage
+    url: https://support.carfax.com/
+  - type: X
+    url: https://x.com/carfaxinc
+  - type: Plans
+    url: plans/carfax-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/carfax-rate-limits.yml
+  - type: FinOps
+    url: finops/carfax-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

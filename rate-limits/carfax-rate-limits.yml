@@ -1,0 +1,21 @@
+name: CARFAX Rate Limits
+description: CARFAX API rate limits are governed by enterprise partnership agreements and are not publicly documented. Limits vary by product, volume contract, and use case. Consumer report bundles are capped by the number of reports purchased per bundle.
+url: https://www.carfax.com/company/partners
+limits:
+  - tier: Consumer Report Bundles
+    type: request-cap
+    description: Consumer plans are not rate-limited per se but are capped by the number of reports in a bundle (1, 3, or 5 reports). Each report is tied to a specific VIN and unused reports cannot be transferred to other VINs.
+    cap: varies
+    unit: reports per bundle
+  - tier: Enterprise / Business API
+    type: contract-defined
+    description: Rate limits for dealer, lender, insurance, and service shop API integrations are defined within the CARFAX Service Data Transfer Facilitation Agreement. Limits depend on volume commitments and product subscriptions. Specific throttling values are not publicly disclosed.
+    cap: negotiated
+    unit: requests per day or month
+headers:
+  - name: x-api-limit
+    description: Present on API responses for partner integrations; indicates the number of API requests remaining within the current limit window. (Observed in third-party integrations; not officially documented publicly.)
+notes:
+  - No public rate limit documentation is available; all limits are negotiated through enterprise agreements
+  - Service history FTP reporting uses batch upload rather than per-request rate limits
+  - QuickVIN lookups and VHR retrievals are subject to per-call billing within contracted volumes

@@ -1,0 +1,61 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CARFAX",
+  "url": "https://www.carfax.com",
+  "description": "CARFAX is a vehicle history reporting company that provides VIN-based history reports, dealer inventory solutions, QuickVIN license plate decoding, and used car valuations based on service records, accident history, ownership history, and title data. APIs are available to dealers, lenders, insurers, and service shops through enterprise partnership agreements.",
+  "sameAs": [
+    "https://github.com/CARFAX",
+    "https://www.linkedin.com/company/carfax",
+    "https://x.com/carfaxinc"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "API Integration Support",
+      "email": "integrationsupport@carfax.ca",
+      "url": "https://www.carfax.com/company/partners"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "CARFAX API Products",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "CARFAX Vehicle History Report API",
+        "description": "Enterprise API for retrieving CARFAX Vehicle History Reports (VHR) by VIN. Provides accident and damage history, service records, ownership history, title problems, lemon history, and recall information.",
+        "url": "https://www.carfax.com/vehicle-history-reports/",
+        "category": "Vehicle History"
+      },
+      {
+        "@type": "Offer",
+        "name": "CARFAX QuickVIN API",
+        "description": "Converts a license plate number and state into a VIN with full vehicle decode (year, make, model, trim). Each QuickVIN lookup includes access to a CARFAX Vehicle History Report.",
+        "url": "https://www.carfaxforlenders.com/products/quickvin/",
+        "category": "License Plate Lookup"
+      },
+      {
+        "@type": "Offer",
+        "name": "CARFAX Service History Reporting API",
+        "description": "Enables automotive repair shops and DMS/SMS providers to submit vehicle service and repair records to CARFAX via FTP batch upload.",
+        "url": "https://www.carfaxserviceshops.com/",
+        "category": "Service History"
+      },
+      {
+        "@type": "Offer",
+        "name": "CARFAX Vehicle Valuation API",
+        "description": "Provides Market-Based and History-Based vehicle valuations for lenders, insurers, and government entities using machine learning on vehicle attributes and daily market data.",
+        "url": "https://go.carfax.ca/en-ca/big/solutions",
+        "category": "Vehicle Valuation"
+      },
+      {
+        "@type": "Offer",
+        "name": "CARFAX VIN Scan Detail API",
+        "description": "Delivers comprehensive VIN-level data in ten groupings including vehicle description, demographic information, activity logs, problem indicators, damage assessment, ownership history, and fraud detection.",
+        "url": "https://go.carfax.ca/en-ca/big/solutions",
+        "category": "VIN Data"
+      }
+    ]
+  }
+}

@@ -2,7 +2,7 @@ aid: carfax
 name: CARFAX
 description: CARFAX is a vehicle history reporting company that provides VIN-based history reports, dealer inventory solutions, QuickVIN license plate decoding, and used car valuations based on service records, accident history, ownership history, and title data. APIs are available to dealers, lenders, insurers, and service shops through enterprise partnership agreements.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/carfax/refs/heads/main/apis.yml
 created: 2026-06-13
 modified: 2026-06-13

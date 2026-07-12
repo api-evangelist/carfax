@@ -90,6 +90,8 @@ apis:
       - type: Documentation
         url: https://apireference.carfax.ca/
 common:
+  - type: DomainSecurity
+    url: security/carfax-domain-security.yml
   - type: Website
     url: https://www.carfax.com
   - type: Documentation

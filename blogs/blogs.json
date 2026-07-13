@@ -6,16 +6,13 @@
   "repo": "carfax",
   "feeds": [
     {
-      "source": "https://www.carfax.com/press",
-      "saved": 0,
-      "error": "HTTP 403 Forbidden on press listing"
-    },
-    {
       "source": "https://www.linkedin.com/company/carfax",
+      "feed_url": "https://www.linkedin.com/company/carfax",
+      "title": "",
       "saved": 0,
-      "error": "linkedin not scrapable (no public feed)"
+      "method": "none"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-27T12:30:46Z"
+  "fetched": "2026-07-11T11:50:51Z"
 }

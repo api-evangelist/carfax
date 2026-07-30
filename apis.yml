@@ -2,10 +2,22 @@ aid: carfax
 name: CARFAX
 description: CARFAX is a vehicle history reporting company that provides VIN-based history reports, dealer inventory solutions, QuickVIN license plate decoding, and used car valuations based on service records, accident history, ownership history, and title data. APIs are available to dealers, lenders, insurers, and service shops through enterprise partnership agreements.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: paid
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Paid
+  confidence: medium
+  source:
+    - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/carfax.png
 url: https://raw.githubusercontent.com/api-evangelist/carfax/refs/heads/main/apis.yml
 created: 2026-06-13
-modified: 2026-06-13
+modified: '2026-07-25'
 specificationVersion: "0.19"
 tags:
   - Vehicle History
@@ -18,21 +30,6 @@ tags:
   - QuickVIN
   - Service History
 apis:
-  - aid: carfax:vehicle-history-report-api
-    name: CARFAX Vehicle History Report API
-    description: Enterprise API for retrieving CARFAX Vehicle History Reports (VHR) by VIN. Provides accident and damage history, service records, ownership history, title problems, lemon history, and recall information. Requires a CARFAX Service Data Transfer Facilitation Agreement; not publicly subscribable.
-    humanURL: https://www.carfax.com/vehicle-history-reports/
-    baseURL: https://www.carfax.com
-    tags:
-      - Vehicle History
-      - VIN
-      - Accident History
-      - Service Records
-    properties:
-      - type: Documentation
-        url: https://www.carfax.com/company/partners
-      - type: Partners
-        url: https://www.carfax.com/company/partners
   - aid: carfax:quickvin-api
     name: CARFAX QuickVIN API
     description: Converts a license plate number and state into a VIN with full vehicle decode (year, make, model, trim). Each QuickVIN lookup includes access to a CARFAX Vehicle History Report. Available to lenders, dealers, and insurance companies through enterprise agreements.
@@ -89,6 +86,21 @@ apis:
     properties:
       - type: Documentation
         url: https://apireference.carfax.ca/
+  - aid: carfax:vehicle-history-report-api
+    name: CARFAX Vehicle History Report API
+    description: Enterprise API for retrieving CARFAX Vehicle History Reports (VHR) by VIN. Provides accident and damage history, service records, ownership history, title problems, lemon history, and recall information. Requires a CARFAX Service Data Transfer Facilitation Agreement; not publicly subscribable.
+    humanURL: https://www.carfax.com/vehicle-history-reports/
+    baseURL: https://www.carfax.com
+    tags:
+      - Vehicle History
+      - VIN
+      - Accident History
+      - Service Records
+    properties:
+      - type: Documentation
+        url: https://www.carfax.com/company/partners
+      - type: Partners
+        url: https://www.carfax.com/company/partners
 common:
   - type: DomainSecurity
     url: security/carfax-domain-security.yml

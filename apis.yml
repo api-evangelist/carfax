@@ -90,6 +90,12 @@ apis:
     baseURL: https://apireference.carfax.ca
     tags:
       - VIN Data
+      - Fraud Prevention
+      - Damage Assessment
+      - Bulk Data
+      - Canada
+    tags_raw:
+      - VIN Data
       - Fraud Detection
       - Damage Assessment
       - Bulk Data
@@ -101,7 +107,6 @@ apis:
     name: CARFAX Vehicle History Report API
     description: Enterprise API for retrieving CARFAX Vehicle History Reports (VHR) by VIN. Provides accident and damage history, service records, ownership history, title problems, lemon history, and recall information. Requires a CARFAX Service Data Transfer Facilitation Agreement; not publicly subscribable.
     humanURL: https://www.carfax.com/vehicle-history-reports/
-    baseURL: https://www.carfax.com
     tags:
       - Vehicle History
       - VIN

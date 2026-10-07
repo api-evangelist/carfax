@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: CARFAX Plans and Pricing
 description: CARFAX offers tiered consumer report bundles and enterprise B2B partnership agreements. Consumer plans are priced per VIN report with multi-report bundles available at reduced per-report rates. Business and dealer access is negotiated through enterprise contracts with custom volume-based pricing.
 url: https://www.carfax.com/vehicle-history-reports/

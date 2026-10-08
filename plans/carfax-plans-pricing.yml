@@ -75,3 +75,55 @@ notes:
   - Business API access requires a CARFAX Service Data Transfer Facilitation Agreement
   - API keys are not publicly subscribable; contact Business Development to initiate
   - Pricing for enterprise tiers is negotiated based on volume and use case
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  - subscription
+  units:
+  - negotiated
+  - period
+  plans:
+  - name: Single Report
+    access: free
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods: []
+  - name: 3-Report Bundle
+    access: free
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods: []
+  - name: 5-Report Bundle
+    access: free
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods: []
+  - name: CARFAX for Dealers
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units:
+    - period
+    periods: []
+  - name: CARFAX for Lenders and Insurance
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units:
+    - negotiated
+    periods: []
+  - name: CARFAX for Service Shops
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units:
+    - negotiated
+    periods: []
